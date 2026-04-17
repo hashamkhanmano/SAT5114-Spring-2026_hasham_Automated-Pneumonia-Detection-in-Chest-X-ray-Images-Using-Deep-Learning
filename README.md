@@ -7,10 +7,11 @@
 Pneumonia is a leading cause of global mortality, especially in resource-limited settings where radiologist shortages lead to critical diagnostic delays.  This project establishes technical benchmarks for clinical deployment by classifying images into 'Normal' and 'Pneumonia' categories using state-of-the-art Convolutional Neural Networks (CNNs). 
 
 ## 📊 Dataset
-[cite_start]The study utilizes the **Kaggle Chest X-Ray Images (Pneumonia)** dataset, curated from 5,860 pediatric patients (ages 1-5). 
+The study utilizes the **Kaggle Chest X-Ray Images (Pneumonia)** dataset, curated from 5,860 pediatric patients (ages 1-5). 
 - **Normal cases:** 1,583 (27%) 
 - **Pneumonia cases:** 4,273 (73%)
-- **Expert Validation:** All images were expert-labeled by clinicians at Guangzhou Women and Children's Medical Center. 
+- **Expert Validation:** All images were expert-labeled by clinicians at Guangzhou Women and Children's Medical Center.
+- Data set Link :https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
 
 ## 🛠️ Methodology & Tech Stack
 - **Models:** Compared **ResNet-50** and **DenseNet-121** architectures. 
