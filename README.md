@@ -15,7 +15,7 @@ Pneumonia is a leading cause of global mortality, especially in resource-limited
 ## 🛠️ Methodology & Tech Stack
 - **Models:** Compared **ResNet-50** and **DenseNet-121** architectures. 
 - **Approach:** Applied **Transfer Learning** (ImageNet pre-trained weights) with selective fine-tuning. 
-- **Optimization:** Addressed class imbalance using weighted loss (1.5:0.8) and medical-appropriate data augmentation. 
+- **Optimization:** Addressed class imbalance using weighted loss  and medical-appropriate data augmentation. 
 - **Interpretability:** Integrated **Grad-CAM** visualizations to highlight clinical features like lung infiltrates and consolidation. 
 
 ## 📈 Key Results 
@@ -24,7 +24,6 @@ Pneumonia is a leading cause of global mortality, especially in resource-limited
 | **ResNet-50** | 88.3% | 87.4% | 0.946 | 23.85M |
 | **DenseNet-121** | 89.7% | 97.7% | 0.955 | 7.17M |
 
-*Note: **DenseNet-121** proved most effective for resource-constrained settings due to its superior parameter efficiency (70% fewer parameters than ResNet-50).
 
 ## 📂 Repository Structure
 - `/src`: Python source code for model training and evaluation.
