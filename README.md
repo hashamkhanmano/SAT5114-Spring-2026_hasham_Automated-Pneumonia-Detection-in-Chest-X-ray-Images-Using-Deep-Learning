@@ -33,4 +33,3 @@ Pneumonia is a leading cause of global mortality, especially in resource-limited
 ## 👥 Authors
 - Hasham Khan
 - Moses Nihongo
-Automated Pneumonia Detection in Chest X-ray Images Using Deep Learning
