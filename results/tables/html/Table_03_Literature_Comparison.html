@@ -1,0 +1,119 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Literature Comparison - Pneumonia Detection Performance</title>
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 20px;
+                background-color: #f8f9fa;
+                color: #333;
+            }
+            .literature-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+                background-color: white;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                border-radius: 8px;
+                overflow: hidden;
+            }
+            .literature-table caption {
+                font-size: 1.5em;
+                font-weight: bold;
+                margin-bottom: 15px;
+                color: #2c3e50;
+                text-align: left;
+                padding: 10px 0;
+            }
+            .literature-table th {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+                font-weight: 600;
+                padding: 15px 12px;
+                text-align: left;
+                font-size: 0.95em;
+                letter-spacing: 0.5px;
+            }
+            .literature-table td {
+                padding: 12px;
+                border-bottom: 1px solid #e9ecef;
+                font-size: 0.9em;
+            }
+            .literature-table tbody tr:hover {
+                background-color: #f1f3f4;
+                transition: background-color 0.3s ease;
+            }
+            .literature-table tbody tr:nth-child(even) {
+                background-color: #f8f9fa;
+            }
+            .literature-table tbody tr:nth-child(odd) {
+                background-color: white;
+            }
+            .our-work {
+                background-color: #e8f5e8 !important;
+                font-weight: 600;
+            }
+            .our-work:hover {
+                background-color: #d4edda !important;
+            }
+        </style>
+    </head>
+    <body>
+        <table class="literature-table">
+            <caption>Table 3: Literature Comparison - Pneumonia Detection Performance</caption>
+            <thead>
+                <tr><th>Study</th><th>Accuracy</th><th>Dataset Size</th><th>Architecture</th><th>Year</th></tr>
+            </thead>
+            <tbody>
+    <tr class="">
+            <td>Kermany et al. (2018)</td>
+            <td>92.8%</td>
+            <td>5,863</td>
+            <td>Custom CNN</td>
+            <td>2018</td>
+        </tr><tr class="">
+            <td>Rajpurkar et al. (2017)</td>
+            <td>94.1%</td>
+            <td>112,120</td>
+            <td>CheXNet (121-layer)</td>
+            <td>2017</td>
+        </tr><tr class="">
+            <td>Liang & Zheng (2020)</td>
+            <td>95.7%</td>
+            <td>5,863</td>
+            <td>ResNet</td>
+            <td>2020</td>
+        </tr><tr class="">
+            <td>Chouhan et al. (2020)</td>
+            <td>96.4%</td>
+            <td>5,863</td>
+            <td>Transfer Learning</td>
+            <td>2020</td>
+        </tr><tr class="">
+            <td>Hashmi et al. (2020)</td>
+            <td>98.4%</td>
+            <td>5,863</td>
+            <td>Ensemble</td>
+            <td>2020</td>
+        </tr><tr class="our-work">
+            <td>Our ResNet-50 (2026)</td>
+            <td>88.3%</td>
+            <td>5860</td>
+            <td>ResNet-50</td>
+            <td>2026</td>
+        </tr><tr class="our-work">
+            <td>Our DenseNet-121 (2026)</td>
+            <td>89.7%</td>
+            <td>5860</td>
+            <td>DenseNet-121</td>
+            <td>2026</td>
+        </tr>
+            </tbody>
+        </table>
+    </body>
+    </html>
+    

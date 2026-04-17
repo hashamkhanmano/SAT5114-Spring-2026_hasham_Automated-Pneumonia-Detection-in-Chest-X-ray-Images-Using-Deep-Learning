@@ -1,0 +1,9 @@
+Model,Error Type,Count,Percentage,Clinical Significance
+ResNet-50,True Negative,210,33.70%,Correct normal identification
+ResNet-50,False Positive,24,3.80%,Unnecessary intervention risk
+ResNet-50,False Negative,49,7.90%,Missed pneumonia case (critical)
+ResNet-50,True Positive,341,54.60%,Correct pneumonia detection
+DenseNet-121,True Negative,179,28.70%,Correct normal identification
+DenseNet-121,False Positive,55,8.80%,Unnecessary intervention risk
+DenseNet-121,False Negative,9,1.40%,Missed pneumonia case (critical)
+DenseNet-121,True Positive,381,61.10%,Correct pneumonia detection

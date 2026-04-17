@@ -1,0 +1,98 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Model Performance Results - Medical Data</title>
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 20px;
+                background-color: #f8f9fa;
+                color: #333;
+            }
+            .performance-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+                background-color: white;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                border-radius: 8px;
+                overflow: hidden;
+            }
+            .performance-table caption {
+                font-size: 1.5em;
+                font-weight: bold;
+                margin-bottom: 15px;
+                color: #2c3e50;
+                text-align: left;
+                padding: 10px 0;
+            }
+            .performance-table th {
+                background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+                color: white;
+                font-weight: 600;
+                padding: 15px 12px;
+                text-align: center;
+                font-size: 0.95em;
+                letter-spacing: 0.5px;
+            }
+            .performance-table td {
+                padding: 12px;
+                border-bottom: 1px solid #e9ecef;
+                font-size: 0.9em;
+                text-align: center;
+            }
+            .performance-table tbody tr:hover {
+                background-color: #e8f5e8;
+                transition: background-color 0.3s ease;
+            }
+            .performance-table tbody tr:nth-child(even) {
+                background-color: #f8f9fa;
+            }
+            .performance-table tbody tr:nth-child(odd) {
+                background-color: white;
+            }
+            .model-name {
+                font-weight: 600;
+                color: #2c3e50;
+                text-align: left !important;
+            }
+            .metric-value {
+                font-weight: 500;
+                color: #27ae60;
+            }
+        </style>
+    </head>
+    <body>
+        <table class="performance-table">
+            <caption>Table 2: Model Performance Results - Medical Data</caption>
+            <thead>
+                <tr><th>Model</th><th>Accuracy</th><th>Sensitivity</th><th>Specificity</th><th>Precision</th><th>F1-Score</th><th>AUC-ROC</th><th>Parameters</th></tr>
+            </thead>
+            <tbody>
+    <tr>
+            <td class="model-name">ResNet-50</td>
+            <td class="metric-value">88.3%</td>
+            <td class="metric-value">87.4%</td>
+            <td class="metric-value">89.7%</td>
+            <td class="metric-value">93.4%</td>
+            <td class="metric-value">90.3%</td>
+            <td class="metric-value">0.946</td>
+            <td class="metric-value">23.9M</td>
+        </tr><tr>
+            <td class="model-name">DenseNet-121</td>
+            <td class="metric-value">89.7%</td>
+            <td class="metric-value">97.7%</td>
+            <td class="metric-value">76.5%</td>
+            <td class="metric-value">87.4%</td>
+            <td class="metric-value">92.3%</td>
+            <td class="metric-value">0.955</td>
+            <td class="metric-value">7.2M</td>
+        </tr>
+            </tbody>
+        </table>
+    </body>
+    </html>
+    

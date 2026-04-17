@@ -1,0 +1,11 @@
+Parameter,ResNet-50,DenseNet-121,Description
+Learning Rate,0.0001,0.0001,Conservative for medical data
+Batch Size,32,32,Standard batch size
+Epochs (Max),15,15,With early stopping
+Optimizer,Adam,Adam,Adaptive learning rate
+Loss Function,Binary Crossentropy,Binary Crossentropy,Standard for binary classification
+Data Augmentation,"Yes (Rotation, Shift, Zoom)","Yes (Rotation, Shift, Zoom)",Medical-appropriate augmentation
+Class Weights,Normal: 1.944,Pneumonia: 0.673,Balanced class training
+Early Stopping,Yes (Patience: 5),Yes (Patience: 5),Prevents overfitting
+LR Reduction,Yes (Factor: 0.5),Yes (Factor: 0.5),Adaptive learning
+Random Seed,42,42,Reproducible results

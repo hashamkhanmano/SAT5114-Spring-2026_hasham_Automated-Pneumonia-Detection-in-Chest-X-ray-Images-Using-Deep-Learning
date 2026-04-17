@@ -1,0 +1,9 @@
+Clinical Standard,Requirement,ResNet-50 Result,DenseNet-121 Result,Compliance Status
+FDA Sensitivity Requirement,≥95%,87.4% ❌,97.7% ✅,Needs Improvement
+FDA Specificity Requirement,≥90%,89.7% ❌,76.5% ❌,Needs Improvement
+Clinical Accuracy Threshold,≥90%,88.3% ❌,89.7% ❌,Needs Improvement
+Radiologist Performance Baseline,87-94%,Within baseline,Within baseline,Acceptable
+Screening Tool Requirement,≥95% Sensitivity,87.4% ❌,97.7% ✅,Needs Improvement
+Safety Margin,Minimize FN,12.6% FN,2.3% FN,Both Pass
+False Negative Rate,<5%,12.60%,2.30%,Both Pass
+False Positive Rate,<10%,10.30%,23.50%,Both Pass

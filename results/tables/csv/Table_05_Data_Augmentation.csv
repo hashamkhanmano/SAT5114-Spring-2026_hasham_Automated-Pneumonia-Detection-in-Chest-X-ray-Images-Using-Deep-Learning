@@ -1,0 +1,8 @@
+Technique,Parameter,Medical Justification,Impact
+Rotation,±10 degrees,Slight patient positioning variation,Improves generalization
+Width Shift,±5%,Minor positioning differences,Reduces position bias
+Height Shift,±5%,Minor positioning differences,Reduces position bias
+Shear,±5%,Minimal geometric distortion,Handles minor distortions
+Zoom,±5%,Distance variation simulation,Handles distance variations
+Horizontal Flip,Disabled,Not appropriate for medical images,Preserves anatomical orientation
+Rescaling,1/255,Standard normalization,Ensures proper scaling

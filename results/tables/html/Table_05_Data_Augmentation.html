@@ -1,0 +1,109 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Data Augmentation Techniques - Medical Image Appropriate</title>
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 20px;
+                background-color: #f8f9fa;
+                color: #333;
+            }
+            .augmentation-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+                background-color: white;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                border-radius: 8px;
+                overflow: hidden;
+            }
+            .augmentation-table caption {
+                font-size: 1.5em;
+                font-weight: bold;
+                margin-bottom: 15px;
+                color: #2c3e50;
+                text-align: left;
+                padding: 10px 0;
+            }
+            .augmentation-table th {
+                background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+                color: white;
+                font-weight: 600;
+                padding: 15px 12px;
+                text-align: left;
+                font-size: 0.95em;
+                letter-spacing: 0.5px;
+            }
+            .augmentation-table td {
+                padding: 12px;
+                border-bottom: 1px solid #e9ecef;
+                font-size: 0.9em;
+            }
+            .augmentation-table tbody tr:hover {
+                background-color: #e3f2fd;
+                transition: background-color 0.3s ease;
+            }
+            .augmentation-table tbody tr:nth-child(even) {
+                background-color: #f8f9fa;
+            }
+            .augmentation-table tbody tr:nth-child(odd) {
+                background-color: white;
+            }
+            .technique-name {
+                font-weight: 600;
+                color: #1976d2;
+            }
+        </style>
+    </head>
+    <body>
+        <table class="augmentation-table">
+            <caption>Table 5: Data Augmentation Techniques - Medical Image Appropriate</caption>
+            <thead>
+                <tr><th>Technique</th><th>Parameter</th><th>Medical Justification</th><th>Impact</th></tr>
+            </thead>
+            <tbody>
+    <tr>
+            <td class="technique-name">Rotation</td>
+            <td>±10 degrees</td>
+            <td>Slight patient positioning variation</td>
+            <td>Improves generalization</td>
+        </tr><tr>
+            <td class="technique-name">Width Shift</td>
+            <td>±5%</td>
+            <td>Minor positioning differences</td>
+            <td>Reduces position bias</td>
+        </tr><tr>
+            <td class="technique-name">Height Shift</td>
+            <td>±5%</td>
+            <td>Minor positioning differences</td>
+            <td>Reduces position bias</td>
+        </tr><tr>
+            <td class="technique-name">Shear</td>
+            <td>±5%</td>
+            <td>Minimal geometric distortion</td>
+            <td>Handles minor distortions</td>
+        </tr><tr>
+            <td class="technique-name">Zoom</td>
+            <td>±5%</td>
+            <td>Distance variation simulation</td>
+            <td>Handles distance variations</td>
+        </tr><tr>
+            <td class="technique-name">Horizontal Flip</td>
+            <td>Disabled</td>
+            <td>Not appropriate for medical images</td>
+            <td>Preserves anatomical orientation</td>
+        </tr><tr>
+            <td class="technique-name">Rescaling</td>
+            <td>1/255</td>
+            <td>Standard normalization</td>
+            <td>Ensures proper scaling</td>
+        </tr>
+            </tbody>
+        </table>
+    </body>
+    </html>
+    

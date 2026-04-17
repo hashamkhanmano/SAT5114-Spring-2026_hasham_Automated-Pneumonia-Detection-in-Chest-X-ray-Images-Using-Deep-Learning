@@ -1,0 +1,12 @@
+Characteristic,Value,Percentage
+Total Images,5860,100.00%
+Normal Cases,1585,27.00%
+Pneumonia Cases,4275,73.00%
+Training Set,5218,89.00%
+Validation Set,18,0.30%
+Test Set,624,10.60%
+Image Format,JPEG,-
+Image Dimensions,224×224 pixels,-
+Color Channels,RGB (3 channels),-
+Class Imbalance Ratio,01:02.7,-
+Data Source,Kaggle Chest X-Ray Dataset,-

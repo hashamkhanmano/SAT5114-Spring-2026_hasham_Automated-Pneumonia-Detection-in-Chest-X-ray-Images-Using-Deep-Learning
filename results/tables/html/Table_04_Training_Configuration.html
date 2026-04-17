@@ -1,0 +1,124 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Training Configuration - Medical Data Training</title>
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 20px;
+                background-color: #f8f9fa;
+                color: #333;
+            }
+            .config-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+                background-color: white;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                border-radius: 8px;
+                overflow: hidden;
+            }
+            .config-table caption {
+                font-size: 1.5em;
+                font-weight: bold;
+                margin-bottom: 15px;
+                color: #2c3e50;
+                text-align: left;
+                padding: 10px 0;
+            }
+            .config-table th {
+                background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+                color: white;
+                font-weight: 600;
+                padding: 15px 12px;
+                text-align: left;
+                font-size: 0.95em;
+                letter-spacing: 0.5px;
+            }
+            .config-table td {
+                padding: 12px;
+                border-bottom: 1px solid #e9ecef;
+                font-size: 0.9em;
+            }
+            .config-table tbody tr:hover {
+                background-color: #fdf2f8;
+                transition: background-color 0.3s ease;
+            }
+            .config-table tbody tr:nth-child(even) {
+                background-color: #f8f9fa;
+            }
+            .config-table tbody tr:nth-child(odd) {
+                background-color: white;
+            }
+            .parameter-name {
+                font-weight: 600;
+                color: #2c3e50;
+            }
+        </style>
+    </head>
+    <body>
+        <table class="config-table">
+            <caption>Table 4: Training Configuration - Medical Data Training</caption>
+            <thead>
+                <tr><th>Parameter</th><th>ResNet-50</th><th>DenseNet-121</th><th>Description</th></tr>
+            </thead>
+            <tbody>
+    <tr>
+            <td class="parameter-name">Learning Rate</td>
+            <td>0.0001</td>
+            <td>0.0001</td>
+            <td>Conservative for medical data</td>
+        </tr><tr>
+            <td class="parameter-name">Batch Size</td>
+            <td>32</td>
+            <td>32</td>
+            <td>Standard batch size</td>
+        </tr><tr>
+            <td class="parameter-name">Epochs (Max)</td>
+            <td>15</td>
+            <td>15</td>
+            <td>With early stopping</td>
+        </tr><tr>
+            <td class="parameter-name">Optimizer</td>
+            <td>Adam</td>
+            <td>Adam</td>
+            <td>Adaptive learning rate</td>
+        </tr><tr>
+            <td class="parameter-name">Loss Function</td>
+            <td>Binary Crossentropy</td>
+            <td>Binary Crossentropy</td>
+            <td>Standard for binary classification</td>
+        </tr><tr>
+            <td class="parameter-name">Data Augmentation</td>
+            <td>Yes (Rotation, Shift, Zoom)</td>
+            <td>Yes (Rotation, Shift, Zoom)</td>
+            <td>Medical-appropriate augmentation</td>
+        </tr><tr>
+            <td class="parameter-name">Class Weights</td>
+            <td>Normal: 1.944</td>
+            <td>Pneumonia: 0.673</td>
+            <td>Balanced class training</td>
+        </tr><tr>
+            <td class="parameter-name">Early Stopping</td>
+            <td>Yes (Patience: 5)</td>
+            <td>Yes (Patience: 5)</td>
+            <td>Prevents overfitting</td>
+        </tr><tr>
+            <td class="parameter-name">LR Reduction</td>
+            <td>Yes (Factor: 0.5)</td>
+            <td>Yes (Factor: 0.5)</td>
+            <td>Adaptive learning</td>
+        </tr><tr>
+            <td class="parameter-name">Random Seed</td>
+            <td>42</td>
+            <td>42</td>
+            <td>Reproducible results</td>
+        </tr>
+            </tbody>
+        </table>
+    </body>
+    </html>
+    
